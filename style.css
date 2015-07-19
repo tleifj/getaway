@@ -1,0 +1,1075 @@
+
+/*
+Theme Name: Getaway
+Theme Author: Travis Johnson
+Version: 1.0
+*/
+
+
+/*========= General Styles ==============*/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;	
+}
+
+h1, h2, h3, h4, h5, p, li, span {
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.banner.page {
+	padding: 10% 0;
+	background-color: #f0f0f0;
+}
+
+.page-container {
+	width: 80%;
+	margin: auto;
+	padding: 4%;
+}
+
+.offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 100px;      /* Give height of your fixed element */
+    margin-top: -100px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+}
+
+/*========= End General Styles ==============*/
+
+/*========= Header Styles ==============*/
+
+.banner {
+	width: 100%;
+	/*miheight: 100%;*/
+	/*height: 350px;*/
+	background-color: #f0f0f0;
+	background-size: 100%;
+	padding: 17% 0;
+}
+
+.banner.home {
+	height: auto;
+	background: dimgrey url('images/19screamin-eagle_napa-valley_iconic-wine-tours_467_COMP.jpg') no-repeat;
+	background-size: 100%;
+	
+}
+
+.banner h1, h2 {
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.banner h1 {
+	font-size: 6.5vw;
+	font-family: 'Euphoria Script', cursive;
+	font-weight: normal;
+}
+
+.banner h2 {
+	padding-top: 1.8%;
+	font-size: 1.85vw;
+	color: white;
+	text-transform: uppercase;
+}
+
+.header-group {
+	
+}
+
+header img {
+	float: left;
+	width: 197px;
+	height: 75px;
+	margin: 10px 0 25px 35px;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+
+}
+
+header {
+	width: 100%;
+	z-index: 2;
+}
+
+header a {
+	color: #000;
+}
+
+.clear-header {
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+	position: fixed;
+	/*-webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;*/
+	background-color: ;
+	
+}
+
+.scroll-header {
+	position: fixed;
+	box-shadow: 0px 5px 30px rgba(0,0,0, 0.25);
+	/*opacity: 0;*/
+	background-color: white;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+.scroll-header img {
+	width: 131px;
+	height: 50px;
+	margin: 15px 0 0 35px;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+
+}
+
+.scroll-header nav {
+	padding: 5px 25px 0 10px;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+.main-nav {
+	height: 83px;
+	float: right;
+	padding: 20px 25px 10px 10px;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+.main-nav ul {
+	display: inline-block;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+.main-nav li, .main-nav a li {
+	float: left;
+	list-style-type: none;
+	margin: 8px 15px 0px 8px;
+	padding: 7px 7px 34px 7px;
+	color: black;
+	position: relative;
+	display: block;
+	z-index: 500;
+/*	font-size: 100%;
+*/}
+
+.main-nav a:visited {
+	color: black;
+}
+
+#menu-button {
+	display: none;
+	float: right;
+	margin: 29px 18px 0 0;
+	position: relative;
+  	padding-left: 1.25em;
+}
+
+#menu-button:before {
+	content: "";
+	position: absolute;
+  	top: 0.25em;
+	left: 0;
+	width: 1.5em;
+	height: 0.265em;
+	border-top: 0.675em double #000;
+	border-bottom: 0.225em solid #000;
+}
+
+
+.alt-sub-sub-nav li a, .alt-sub-sub-nav a:visited {
+	
+	color: white;
+}
+
+nav li.active {
+	color: rgb(38, 155, 198);
+}
+
+
+#book-now {
+	border-radius: 20px;
+	border: 2px solid black;
+	margin: 2px 18px 8px 8px;
+	padding: 10px 15px;
+}
+
+#book-now:hover {
+	background: rgb(38, 155, 198);
+	color: black;
+}
+
+.alt-sub-nav {
+	display: none;
+	position: absolute;
+	width: 765px;
+	height: 200px;
+	background-color: #3F3f3F;
+	left:-318px; 
+	margin:0px 0 0 -1px; 
+	padding:25px; 
+	list-style:none;
+	top: 59px;
+	text-transform: uppercase;
+}
+
+.alt-sub-nav p{
+	margin: 0;
+	padding: 0;
+}
+
+.alt-sub-nav span {
+	color: #707070;
+}
+.alt-sub-nav-item {
+	float: left;
+	margin: 0 15px 0 0;
+}
+
+	.alt-sub-nav-item a, .alt-sub-nav-item a:visited {
+		color: rgb(38, 155, 198);
+	}
+
+
+.alt-sub-sub-nav {
+	float: left;
+}
+
+	.alt-sub-sub-nav a:visited {
+		color: #FFF;
+	}
+
+	.alt-sub-sub-nav ul {
+		float: none;
+		margin: 10px 20px 0 0;
+		padding: 0;
+	}
+
+	.alt-sub-sub-nav li {
+		float: none;
+		margin: 0 0 10px 0;
+		padding: 0;
+		font-size: 65%;
+		width: 100px;
+		color: white;
+	}
+
+#day-trip-label {
+	margin-bottom: 10px;
+}
+
+
+#about-dropdown>.alt-sub-nav {
+	width: 105px;
+	height: auto;
+	left: 0;
+	padding-bottom: 15px;
+	
+	font-size: 95%;
+}
+#about-dropdown>.alt-sub-nav li {
+	float: none;
+	padding-bottom: 10px;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+#about-dropdown>.alt-sub-nav a, #about-dropdown>.alt-sub-nav a:visited {
+	color: white;
+}
+
+#tour-dropdown:hover>.alt-sub-nav {
+	display: inline-block;
+}
+
+#about-dropdown:hover>.alt-sub-nav {
+	display: inline-block;
+}
+
+.main-nav li:hover, .main-nav a:hover, #about-dropdown>.alt-sub-nav a:hover  {
+	color: rgb(38, 155, 198);
+}
+
+.sidr-class-alt-sub-nav {
+	display: none;
+}
+
+#sidr-id-menu-about-menu-1 {
+	margin-top: 5px;
+}
+
+/*========= End Header Styles ==============*/
+
+
+.main {
+width: 90%;
+padding: 2% 5%;
+/*height: 400px;
+*/
+}
+
+.main h1, .main h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.main h1 {
+	font-size: 3vw;
+}
+
+.main h2 {
+	font-size: 2.4vw;
+	margin: 2% 0;
+}
+
+.home-sub {
+	width: 31%;
+/*	padding-top: 2%;
+*/	background-color: rgb(38, 155, 198);
+	float: left;
+	margin: 1%;
+	position: relative;
+}
+
+.inner-box {
+	width: 100%;
+	padding-top: 65%;
+/*	position: absolute;
+*/	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.overlay {
+	background-color: rgba(0,0,0, 0.0);
+	
+	width: 100%;
+/*	padding-top: 65%;
+*/	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: all 0.5s;
+  	-moz-transition: all 0.5s;
+  	-o-transition: all 0.5s;
+  	transition: all 0.5s;
+}
+
+.overlay:hover {
+	background-color: rgba(0,0,0, 0.6);
+	
+}
+
+.overlay h3 {
+	color: white;
+	opacity: 0;
+	text-align: center;
+	padding-top: 30%;
+	margin: 0;
+	font-size: 2.75vw;
+	-webkit-transition: all 0.5s;
+  	-moz-transition: all 0.5s;
+  	-o-transition: all 0.5s;
+  	transition: all 0.5s;
+	
+}
+
+.overlay:hover>h3, .overlay:hover>p, .overlay:hover>div.arrow-icon {
+	opacity: 1;
+}
+
+
+.bike {
+	background: grey url('images/tours/bike2.jpg') top center no-repeat;
+	background-size: 100%;
+
+}
+
+.group {
+	background: grey url('images/tours/kayak.jpg') top center no-repeat;
+	background-size: 100%;
+}
+
+.multi-day {
+	background: grey url('images/tours/hike.jpg') top center no-repeat;
+	background-size: 100%;
+
+}
+
+.pre-footer {
+	width: 100%;
+	height: 75px;
+	background-color: #707070;
+
+}
+
+.social {
+	display: inline-block;
+	margin: 10px 0;
+	padding: 15px;
+	width: ;
+
+}
+
+.social li {
+	float: left;
+	list-style-type: none;
+	color: white;
+	height: 32px;
+	width: 32px;
+	background-image: url('images/socialgetaway.png');
+	background-repeat: no-repeat;
+	margin-right: 2vw;
+}
+
+/*.social li a {
+	margin-right: 2vw;
+}*/
+
+.social a:last-child>li {
+	margin-right: 0px;
+}
+
+.facebook {
+	background-position: -32px -32px;
+}
+
+.facebook:hover {
+	background-position: 0px -32px;
+}
+
+.instagram {
+	background-position: -32px 0px;
+}
+
+.instagram:hover {
+	background-position: 0px 0px;
+}
+
+.twitter {
+	background-position: -32px -64px;
+}
+
+.twitter:hover {
+	background-position: 0px -64px;
+}
+
+.pinterest {
+	background-position: -32px -192px;
+}
+
+.pinterest:hover {
+	background-position: 0px -192px;
+}
+
+.google {
+	background-position: -32px -128px;
+}
+
+.google:hover {
+	background-position: 0px -128px;
+}
+
+.yelp {
+	background-position: -32px -95px;
+}
+
+.yelp:hover {
+	background-position: 0px -95px;
+}
+
+.tripadvisor {
+	background-position: -44px -160px;
+}
+
+.tripadvisor:hover {
+	background-position: 0px -160px;
+}
+
+.social li.tripadvisor {
+	width: 44px;
+}
+
+
+
+footer {
+	background-color: #3F3f3F;
+	bottom: 0px;
+	width: 100%;
+	/*height: 150px;*/
+	color: white;
+	text-align: center;
+	font-size: 80%;
+	padding-bottom: 30px;
+}
+
+footer p {
+	margin: 6px;
+
+}
+
+footer img {
+	display: block;
+	margin: 0 auto 20px;
+}
+
+
+/*======================== Tours Page ============================*/
+
+.tour-banner {
+	text-align: center;
+	padding-top: 20%;
+	background: dimgrey url('images/tours/calistoga-sip-n-cylce.jpg') no-repeat;
+	background-size: 100%;
+}
+
+
+.banner.home {
+	height: auto;
+	
+	
+}
+
+.sub-header {
+	height: 60px;
+	width: 100%;
+	background-color: #707070;
+	color: white;
+	text-align: center;
+}
+
+.sub-header ul {
+	
+	display: inline-block;
+}
+.sub-header li {
+	float: left;
+	list-style-type: none;
+	margin: 0 20px;
+	padding: 8px 0;
+
+}
+
+.sub-header li:hover {
+	color: rgb(38, 155, 198);
+}
+
+.tour {
+	height: 500px;
+	background: url('images/tours/bike2.jpg') center center no-repeat;
+	background-size: 100%;
+	padding-bottom: 10%;
+}
+
+
+.tour h1 {
+	padding-top: 200px;
+	font-size: 5vw;
+}
+
+.arrow {
+	color: white;
+	opacity: .5;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	margin-top: 2%;
+}
+
+.header-group>.arrow-icon {
+	opacity: 1;
+	float:left;
+}
+
+.left-arrow {
+	float: left;
+	 margin:  20px 0 0 20px;
+
+}
+
+.arrow-icon.right-arrow {
+	float: right;
+  	margin:  20px 20px 0 0;
+}
+
+.tour-container {
+	background-color: white;
+	position: relative;
+	top: -5.75vw;
+	color: black;
+}
+
+.tour-container h1, h2, h3 {
+	color: #3F3f3F;
+}
+
+.tour-container h1 {
+	margin-top: 0;
+	font-size: 300%;
+}
+
+.tour-container a, .tour-container a:visited {
+	color: white;
+}
+
+
+.tour-aside {
+	float:right;
+	width: 30%;
+	padding: 5%;
+	/*background-color: #F0F0F0;*/
+	margin-left: 3%;
+	border: 2px solid #c0c0c0;
+	text-align: center;
+}
+
+.book-button {
+	background-color: rgb(38, 155, 198);
+	width: 75%;
+/*	height: 12%;
+*/	border-radius: 30px;
+/*	border: 3px solid white;
+*/	margin: auto;
+	text-align: center;
+	padding: 7% 1px;
+
+}
+
+.mobile {
+	display:none;
+}
+
+.book-button:hover {
+	background-color: rgb(35,142,182);
+}
+
+.tour-aside h3 {
+	text-align: center;
+	color: rgb(38, 155, 198);
+	font-size: 300%;
+	margin: 0 0 15px 0;
+
+}
+
+/*Trip Advisor elements full page*/
+#CDSWIDSSP {
+	text-align: center !important;
+	width: 100% !important;
+}
+
+.widSSPBranding dt {
+	margin: 6px auto !important;
+}
+
+.widSSPAll {
+	width: 66% !important;
+	margin: auto !important;
+}
+
+/*Trip Advisor elements mobile page*/
+
+#CDSRATINGWIDGET977 {
+	margin: 25px auto !important;
+	
+}
+
+#CDSROWLOC977 {
+	display: none !important;
+}
+
+#CDSROWRATING977 {
+	padding-left: 12px !important;
+}
+
+.tour-aside blockquote {
+	color: #707070;
+	font-style: italic;
+	font-size: 90%;
+	margin: 5% 5% 2%;
+
+}
+
+.rating {
+	background-color: #3F3f3F;
+	width: 75%;
+	margin: auto;
+	text-align: center;
+	padding: 20px 1px;
+	color: white;
+}
+
+.quote-author {
+	color: #707070;
+	font-size: 75%;
+}
+
+.schedule {
+	border-radius: 25px;
+	width: 40px;
+	height: 40px;
+	background-color: rgb(38, 155, 198);
+
+}
+
+.schedule:after {
+	border-radius: 25px;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(38, 155, 198);
+}
+
+
+
+/*======================== Guides Page ============================*/	
+
+.main.guides {
+	background-color: #FFF;
+}
+
+.guide-container, .small-tour-container {
+	width: 28%;
+	margin: 2.5%;
+	background-color: #fff;
+	float: left;
+	color: #3F3f3F;
+}
+
+	.guide-container h2, .small-tour-container h2 {
+		color: #3f3f3f;
+		text-transform: uppercase;
+		font-size: 18px;
+		text-align: left;
+		margin-top: 4%;
+	}
+
+		.small-tour-container h2:hover {
+			color: rgb(38, 155, 198);
+		}
+	
+	.small-tour-container p {
+		position: relative;
+	}
+
+	.small-tour-container span {
+		color: #FFF;
+		background-color: rgb(38, 155, 198);
+		border-radius: 25%;
+		padding: 5px 10px;
+		margin-left: 10px;
+	}
+
+	.arrow-icon {
+		content: "";
+		background: url('images/white-arrow-icons.png') 0 0 no-repeat;
+		width: 54px;
+		height: 54px;
+		margin: auto;
+		opacity: 0.0;
+		-webkit-transition: all 0.2s;
+  		-moz-transition: all 0.2s;
+  		-o-transition: all 0.2s;
+  		transition: all 0.2s;
+	}
+
+
+.guide-container > .guide-img, .small-tour-container > .small-tour-img {
+	width: 100%;
+	height: 150px;
+	background-color: rgb(38, 155, 198);
+	position: relative;
+}
+
+.small-tour-img p{
+	text-align: center;
+	margin-top: 16%;
+	text-transform: uppercase;
+	font-size: 125%;
+	color: #FFF;
+	opacity: 0.0;
+	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	-o-transition: all 0.2s;
+  	transition: all 0.2s;
+  	margin-bottom: 5px;
+}
+
+.small-tour-img p:after {
+	content:"";
+	width: 15px;
+	height: 15px;
+	background: url("images/icons.png") 0 0 no-repeat;
+	background-position: 0px -16px;
+}
+
+
+/*======================== Blog Page ============================*/
+
+.blog-listing-container {
+	width: 63%;
+	padding: 1.5%;
+	margin: 0 1.5%;
+	float: left;
+}
+
+.blog-listing-container a, blog-listing-container a:visited {
+	color: black;
+}
+
+.blog-listing-container span a, blog-listing-container span a:visited {
+	color: #707070;
+}
+
+.blog-listing-container a:hover {
+	color: rgb(38, 155, 198);
+}
+
+.blog-post h1 {
+	margin-bottom: 10px;
+}
+
+.blog-post span{
+	text-transform: uppercase;
+	font-size: 90%;
+	color: #707070;
+}
+
+.blog-post img {
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.blog-post img.avatar {
+	vertical-align: middle;
+	border-radius: 50%;
+	margin-right: 5px;
+	float: none;
+}
+
+.blog-info {
+	/*float: right;*/
+}
+
+.sidebar {
+	width: 25%;
+	padding: 1.5%;
+	margin: 0 1.5%;
+	height: 500px;
+	
+	float: left;
+}
+
+/*======================== End Blog Page ============================*/
+
+
+/*=================================================================*/
+						 /*RESPONSIVE*/
+/*=================================================================*/
+
+/*======================== General ============================*/	
+
+@media screen and (max-width:850px) {
+		nav.main-nav ul {
+			display: none;
+		}
+
+		#menu-button {
+			display: inline-block;
+		}
+
+		.scroll-header img {
+			margin-bottom: 20px;
+		}
+
+/*======================== Tour and Guide Pages ============================*/
+
+		.guide-container, .small-tour-container {
+			width: 45%;
+			
+		}
+
+		.main h1 {
+			font-size: 5vw;
+		}
+		
+
+}
+
+@media screen and (max-width:765px) {
+	.alt-sub-nav {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		background-color: #3F3f3F;
+		left:-282px; 
+		margin:0px 0 0 -1px; 
+		padding:25px; 
+		list-style:none;
+		top: 56px;
+		
+	}
+
+	.alt-sub-nav p{
+		margin: 0;
+		padding: 0;
+	}
+
+	.alt-sub-nav span {
+		color: #707070;
+	}
+	.alt-sub-nav-item {
+		float: left;
+		margin: 0 15px 0 0;
+	}
+
+	.alt-sub-sub-nav {
+		float: left;
+	}
+
+	.alt-sub-sub-nav ul {
+		float: none;
+		margin: 10px 20px 0 0;
+		padding: 0;
+	}
+
+	.alt-sub-sub-nav li {
+		float: none;
+		margin: 0 0 10px 0;
+		padding: 0;
+		font-size: 65%;
+		width: 100px;
+		color: white;
+	}
+
+
+}
+
+	/*====================== General ================================*/
+
+@media screen and (max-width:700px) {
+
+	.social li {
+		margin-right: 4vw;
+	}
+	
+	/*====================== End General ================================*/
+
+	/*======================== Home Page ============================*/	
+
+	.banner h1 {
+		font-size: 6.5vw;
+	}
+
+	.banner h2 {
+		font-size: 2.85vw;
+		width: 80%;
+		margin: auto;
+	}
+
+	.main h2 {
+		font-size: 5.4vw;
+	}
+
+	.home-sub {
+	width: 100%;
+	margin-top: 5%;
+	background-color: rgb(38, 155, 198);
+	
+	margin: 1%;
+	position: relative;
+	}
+
+	.overlay h3 {
+		font-size: 8.75vw;
+	}
+
+	/*======================== Tour and Guide Pages ============================*/	
+
+	.tour-container {
+		top: 0px;
+	}
+
+	.tour-aside {
+	display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.mobile .book-button {
+	padding: 4% 1px;
+	}
+
+	.arrow {
+	
+	height: 25px;
+	width: 25px;
+	}
+
+	.guide-container, .small-tour-container {
+			width: 95%;
+			
+	}
+
+		.small-tour-container>.small-tour-img {
+			height: 300px;
+		}
+
+		.small-tour-img p{
+			font-size: 225%;
+			margin-top: 24%;
+		}
+
+	.main h1 {
+		font-size: 7vw;
+	}
+
+}
+
+	
+
+
+
+/*=================================================================*/
+						 /*END RESPONSIVE*/
+/*=================================================================*/
