@@ -80,7 +80,7 @@ a {
 }
 
 .banner h1 {
-	font-size: 6.5vw;
+	font-size: 8.5vw;
 	font-family: 'Euphoria Script', cursive;
 	font-weight: normal;
 }
@@ -617,19 +617,25 @@ footer img {
 
 .header-group>.arrow-icon {
 	opacity: 1;
-	float:left;
+	
 }
 
-.left-arrow {
+.arrow-icon.left-arrow {
 	float: left;
-	 margin:  20px 0 0 20px;
+	 margin:  1.5% 0 0 20px;
+	 background: url('images/white-arrow-icons.png') 0 -108px no-repeat;
+	 width: 54px;
+	 height: 54px;
 
 }
+
 
 .arrow-icon.right-arrow {
 	float: right;
-  	margin:  20px 20px 0 0;
+  	margin:  1.5% 20px 0 0;
+  	background: url('images/white-arrow-icons.png') 0 0 no-repeat;
 }
+
 
 .tour-container {
 	background-color: white;
@@ -655,6 +661,7 @@ footer img {
 .tour-aside {
 	float:right;
 	width: 30%;
+	min-width: 200px;
 	padding: 5%;
 	/*background-color: #F0F0F0;*/
 	margin-left: 3%;
@@ -696,9 +703,11 @@ footer img {
 	width: 100% !important;
 }
 
-.widSSPBranding dt {
+#CDSWIDSSP .widSSPData .widSSPBranding dt {
 	margin: 6px auto !important;
+	width: inherit !important;
 }
+
 
 .widSSPAll {
 	width: 66% !important;
@@ -780,7 +789,12 @@ footer img {
 		text-align: left;
 		margin-top: 4%;
 	}
-
+		
+	.guide-container img {
+		max-width: 100%;
+		height: inherit;
+	}
+	
 		.small-tour-container h2:hover {
 			color: rgb(38, 155, 198);
 		}
@@ -812,9 +826,7 @@ footer img {
 
 
 .guide-container > .guide-img, .small-tour-container > .small-tour-img {
-	width: 100%;
-	height: 150px;
-	background-color: rgb(38, 155, 198);
+	max-width: 100%;
 	position: relative;
 }
 
@@ -832,13 +844,12 @@ footer img {
   	margin-bottom: 5px;
 }
 
-.small-tour-img p:after {
-	content:"";
-	width: 15px;
-	height: 15px;
-	background: url("images/icons.png") 0 0 no-repeat;
-	background-position: 0px -16px;
-}
+	.small-tour-img img {
+		max-width: 100%;
+		height: inherit;
+	}
+
+
 
 
 /*======================== Blog Page ============================*/
@@ -919,6 +930,12 @@ footer img {
 			margin-bottom: 20px;
 		}
 
+		.clear-header img {
+			width: 131px;
+			height: 50px;
+			margin-top: 27px;
+		}
+
 /*======================== Tour and Guide Pages ============================*/
 
 		.guide-container, .small-tour-container {
@@ -995,9 +1012,7 @@ footer img {
 
 	/*======================== Home Page ============================*/	
 
-	.banner h1 {
-		font-size: 6.5vw;
-	}
+
 
 	.banner h2 {
 		font-size: 2.85vw;
@@ -1051,13 +1066,9 @@ footer img {
 			
 	}
 
-		.small-tour-container>.small-tour-img {
-			height: 300px;
-		}
-
 		.small-tour-img p{
 			font-size: 225%;
-			margin-top: 24%;
+			margin-top: 20%;
 		}
 
 	.main h1 {

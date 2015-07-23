@@ -12,8 +12,9 @@ get_header();
 ?>
 <section class="banner tour-banner">
 	<div class="header-group">
-		<div class="arrow-icon left-arrow"></div>
-		<div class="right-arrow arrow-icon"></div>	
+
+		<a class="arrow-icon left-arrow" href="<?php $prevpo=get_previous_post(); $prevpoid=$prevpo->ID; echo get_permalink($prevpoid); ?>"></a>
+		<a class="arrow-icon right-arrow" href="<?php $nepo=get_next_post(); $nepoid=$nepo->ID; echo get_permalink($nepoid); ?>"></a>	
 		<h1><?php the_field('name');  ?></h1>
 				<!-- <span class="left-arrow"><</span>
 				<span class="right-arrow">></span> -->	
@@ -32,11 +33,6 @@ get_header();
 					</ul>
 				</div>
 				<script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=659&amp;locationId=656317&amp;lang=en_US&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false&amp;display_version=2"></script>
-				<!-- <div class="rating">Trip Advisor Rating</div>
-				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nulla odit praesentium veniam, ratione, reiciendis dignissimos eius, excepturi ullam repellendus, nobis voluptate! Omnis est dolor eius voluptate autem, molestias cum."</blockquote>
-				<span class="quote-author">- Mary-Lou, Lansing, MI</span>
-				<blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nulla odit praesentium veniam, ratione, reiciendis dignissimos eius, excepturi ullam repellendus, nobis voluptate! Omnis est dolor eius voluptate autem, molestias cum."</blockquote>
-				<span class="quote-author">- Paul, Orlando, FL</span> -->
 			</div>
 			<h3><?php the_field('tag_line');  ?></h3>
 			<p><?php the_field('description');  ?></p>

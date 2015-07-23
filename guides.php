@@ -16,7 +16,7 @@ $guide = new WP_Query(array(
 while($guide->have_posts()) {
 	$guide->the_post(); ?>
 		<div class="guide-container">
-			<div class="guide-img"></div>
+			<?php the_post_thumbnail(); ?>
 			<h2><?php the_field('name'); ?></h2>
 			<p><?php the_field('description'); ?></p>
 			<p><?php the_field('favorite_wineries'); ?></p>

@@ -110,16 +110,16 @@
 									<?php wp_nav_menu(array('theme_location' => 'day_tour_bike')); ?>
 								</div>
 								<div class="alt-sub-sub-nav">
-									<span>Hike</span>
-									<?php wp_nav_menu(array('theme_location' => 'day_tour_hike')); ?>
-								</div>
-								<div class="alt-sub-sub-nav">
 									<span>Kayak</span>
 									<?php wp_nav_menu(array('theme_location' => 'day_tour_kayak')); ?>
 								</div>
 								<div class="alt-sub-sub-nav">
-									<span>Van</span>
+									<span>Hike</span>
 									<?php wp_nav_menu(array('theme_location' => 'day_tour_hike')); ?>
+								</div>
+								<div class="alt-sub-sub-nav">
+									<span>Van</span>
+									<?php wp_nav_menu(array('theme_location' => 'day_tour_van')); ?>
 								</div>
 								<div class="clear"></div>
 							</div>
@@ -166,16 +166,16 @@
 										<?php wp_nav_menu(array('theme_location' => 'day_tour_bike')); ?>
 									</div>
 									<div class="alt-sub-sub-nav">
-										<span>Hike</span>
-										<?php wp_nav_menu(array('theme_location' => 'day_tour_hike')); ?>
-									</div>
-									<div class="alt-sub-sub-nav">
 										<span>Kayak</span>
 										<?php wp_nav_menu(array('theme_location' => 'day_tour_kayak')); ?>
 									</div>
 									<div class="alt-sub-sub-nav">
-										<span>Van</span>
+										<span>Hike</span>
 										<?php wp_nav_menu(array('theme_location' => 'day_tour_hike')); ?>
+									</div>
+									<div class="alt-sub-sub-nav">
+										<span>Van</span>
+										<?php wp_nav_menu(array('theme_location' => 'day_tour_van')); ?>
 									</div>
 									<div class="clear"></div>
 								</div>

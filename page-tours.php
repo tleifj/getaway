@@ -35,10 +35,17 @@ if($day_tour->have_posts()) {
 				<div class="small-tour-img">
 				<a href="<?php the_permalink();?>">
 					<div class="overlay">
-						<?php the_post_thumbnail('small-thumbnail'); ?>
+						
 						<p>More Info</p>
 						<div class="arrow-icon"></div>
 					</div>
+					<?php 
+						if(has_post_thumbnail()){
+							the_post_thumbnail();
+						} else {
+							echo '<img src="'. get_template_directory_uri() . '/images/thumbnail-placeholder.jpg" alt=""/>';
+						}
+						?>
 				</a>
 				</div>	
 				
@@ -63,7 +70,22 @@ if($multi_day_tour->have_posts()) {
 		$multi_day_tour->the_post();
 	?>
 		<div class="small-tour-container">
-			<div class="small-tour-img"></div>
+			<div class="small-tour-img">
+				<a href="<?php the_permalink();?>">
+					<div class="overlay">
+						
+						<p>More Info</p>
+						<div class="arrow-icon"></div>
+					</div>
+					<?php 
+						if(has_post_thumbnail()){
+							the_post_thumbnail();
+						} else {
+							echo '<img src="'. get_template_directory_uri() . '/images/thumbnail-placeholder.jpg" alt=""/>';
+						}
+						?>
+				</a>
+				</div>
 			<h2><?php the_field('name'); ?></h2>
 			<p><?php the_field('tag_line');?></p>
 		</div>
@@ -84,7 +106,22 @@ if($group_tour->have_posts()) {
 		$group_tour->the_post();
 	?>
 		<div class="small-tour-container">
-			<div class="small-tour-img"></div>
+			<div class="small-tour-img">
+				<a href="<?php the_permalink();?>">
+					<div class="overlay">
+						
+						<p>More Info</p>
+						<div class="arrow-icon"></div>
+					</div>
+					<?php 
+						if(has_post_thumbnail()){
+							the_post_thumbnail();
+						} else {
+							echo '<img src="'. get_template_directory_uri() . '/images/thumbnail-placeholder.jpg" alt=""/>';
+						}
+						?>
+				</a>
+				</div>
 			<h2><?php the_field('name'); ?></h2>
 			<p><?php the_field('tag_line');?></p>
 		</div>
