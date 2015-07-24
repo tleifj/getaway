@@ -18,6 +18,7 @@ get_header();
 				<div class="inner-box bike">
 					<div class="overlay">
 						<h3>DAY TRIP</h3>
+						<div class="arrow-icon"></div>
 					</div>
 				</div>	
 			</div>

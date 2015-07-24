@@ -2,13 +2,6 @@
 
 get_header();
 
-// $tour = new WP_Query(array(
-// 				'post_type' => 'tour'
-// 				)); 
-				
-// if($tour->have_posts()) { 
-// 	$tour->the_post(); 
-
 ?>
 <section class="banner tour-banner">
 	<div class="header-group">
@@ -16,8 +9,6 @@ get_header();
 		<a class="arrow-icon left-arrow" href="<?php $prevpo=get_previous_post(); $prevpoid=$prevpo->ID; echo get_permalink($prevpoid); ?>"></a>
 		<a class="arrow-icon right-arrow" href="<?php $nepo=get_next_post(); $nepoid=$nepo->ID; echo get_permalink($nepoid); ?>"></a>	
 		<h1><?php the_field('name');  ?></h1>
-				<!-- <span class="left-arrow"><</span>
-				<span class="right-arrow">></span> -->	
 	</div>		
 </section>
 	<section class="main">

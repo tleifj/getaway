@@ -39,9 +39,14 @@ a {
 
 .page-container {
 	width: 80%;
+	max-width: 1200px;
 	margin: auto;
 	padding: 4%;
 }
+
+	.page-container h2 {
+		text-align: left;
+	}
 
 .offset:before { 
 	display: block; 
@@ -402,8 +407,8 @@ padding: 2% 5%;
 	color: white;
 	opacity: 0;
 	text-align: center;
-	padding-top: 30%;
-	margin: 0;
+	padding-top: 20%;
+	margin: 0 0 2% 0;
 	font-size: 2.75vw;
 	-webkit-transition: all 0.5s;
   	-moz-transition: all 0.5s;
@@ -542,7 +547,8 @@ footer {
 }
 
 footer p {
-	margin: 6px;
+	margin: 6px auto;
+	max-width: 85%;
 
 }
 
@@ -1035,6 +1041,7 @@ footer img {
 
 	.overlay h3 {
 		font-size: 8.75vw;
+		padding-top: 24%;
 	}
 
 	/*======================== Tour and Guide Pages ============================*/	
