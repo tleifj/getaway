@@ -13,7 +13,7 @@ get_header();
 	</section>
 	<section class="main">
 	<h2>TOURS</h2>
-		<a href="http://localhost:8888/getaway_adventures/tours/#day-trips">
+		<a href="index.php/tours/#day-trips">
 			<div class="home-sub ">
 				<div class="inner-box bike">
 					<div class="overlay">
@@ -23,7 +23,7 @@ get_header();
 				</div>	
 			</div>
 		</a>
-		<a href="http://localhost:8888/getaway_adventures/tours/#multi-day-trips">
+		<a href="index.php/tours/#multi-day-trips">
 			<div class="home-sub">
 				<div class="inner-box multi-day">
 					<div class="overlay">
@@ -32,7 +32,7 @@ get_header();
 				</div>	
 			</div>
 		</a>	
-		<a href="http://localhost:8888/getaway_adventures/tours/#group-trips">	
+		<a href="index.php/tours/#group-trips">	
 			<div class="home-sub ">
 				<div class="inner-box group">
 					<div class="overlay">

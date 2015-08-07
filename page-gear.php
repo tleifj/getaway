@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-<section class="banner page">
+<section class="banner page gear">
 	<h1><?php the_title(); ?></h1>
 </section>
 <section class="page-container">

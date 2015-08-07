@@ -9,7 +9,7 @@
 				<a href="http://www.yelp.com/biz/getaway-adventures-santa-rosa"><li class="yelp"></li></a>
 				<a href="https://plus.google.com/108218578189954276063/about"><li class="google"></li></a>
 			</ul>
-		<img src="/getaway_adventures_2/wp-content/themes/getaway/images/white-logo.png" alt="">
+		<img src="<?php echo get_template_directory_uri();?>/images/white-logo.png" alt="">
 		<p>Offering tours in Napa, Sonoma, Calistoga, Healdsburg, and the Russian River</p>
 		<p>2228 Northpoint Pkwy | Santa Rosa, CA 95407 | 1 (800) 499-2453</p>
 			

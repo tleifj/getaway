@@ -18,9 +18,15 @@ h1, h2, h3, h4, h5, p, li, span {
 	
 }
 
+p {
+	line-height: 25px;
+}
+
 a {
 	text-decoration: none;
 }
+
+
 
 .clear {
 	clear: both;
@@ -35,6 +41,7 @@ a {
 .banner.page {
 	padding: 10% 0;
 	background-color: #f0f0f0;
+	background-size: cover;
 }
 
 .page-container {
@@ -56,6 +63,15 @@ a {
     visibility: hidden; 
 }
 
+.full-col {
+	width: 100%;
+}
+
+.half-col {
+	float:left;
+	width:50%;
+}
+
 /*========= End General Styles ==============*/
 
 /*========= Header Styles ==============*/
@@ -72,7 +88,7 @@ a {
 .banner.home {
 	height: auto;
 	background: dimgrey url('images/19screamin-eagle_napa-valley_iconic-wine-tours_467_COMP.jpg') no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	
 }
 
@@ -119,7 +135,7 @@ header {
 }
 
 header a {
-	color: #000;
+	color: #FFF;
 }
 
 .clear-header {
@@ -185,7 +201,7 @@ header a {
 	list-style-type: none;
 	margin: 8px 15px 0px 8px;
 	padding: 7px 7px 34px 7px;
-	color: black;
+	color: #FFF;
 	position: relative;
 	display: block;
 	z-index: 500;
@@ -193,8 +209,22 @@ header a {
 */}
 
 .main-nav a:visited {
-	color: black;
+	color: #FFF;
 }
+
+.scroll-header .main-nav a, .scroll-header .main-nav a:visited, .scroll-header .main-nav li, .scroll-header .main-nav a li  {
+	color:black;
+}
+
+.scroll-header .alt-sub-nav a, .scroll-header .alt-sub-nav a:visited, .scroll-header .alt-sub-nav li, .scroll-header .alt-sub-nav a li  {
+	color:#FFF;
+}
+
+.scroll-header .alt-sub-nav-item p{
+	color: rgb(38, 155, 198);
+}
+
+
 
 #menu-button {
 	display: none;
@@ -227,22 +257,20 @@ nav li.active {
 
 
 #book-now {
+	background: rgb(38, 155, 198);
 	border-radius: 20px;
-	border: 2px solid black;
 	margin: 2px 18px 8px 8px;
 	padding: 10px 15px;
 }
 
 #book-now:hover {
-	background: rgb(38, 155, 198);
-	color: black;
+	color: #FFF;
 }
 
 .alt-sub-nav {
 	display: none;
 	position: absolute;
 	width: 765px;
-	height: 200px;
 	background-color: #3F3f3F;
 	left:-318px; 
 	margin:0px 0 0 -1px; 
@@ -368,7 +396,7 @@ padding: 2% 5%;
 /*	padding-top: 2%;
 */	background-color: rgb(38, 155, 198);
 	float: left;
-	margin: 1%;
+	margin: 1% 1% 25px 1%;
 	position: relative;
 }
 
@@ -441,7 +469,7 @@ padding: 2% 5%;
 
 .pre-footer {
 	width: 100%;
-	height: 75px;
+	height: 30px;
 	background-color: #707070;
 
 }
@@ -560,11 +588,15 @@ footer img {
 
 /*======================== Tours Page ============================*/
 
+.tour {
+	background: url('images/tour-bg.jpg') 50% 0 no-repeat;
+}
+
 .tour-banner {
 	text-align: center;
 	padding-top: 20%;
-	background: dimgrey url('images/tours/calistoga-sip-n-cylce.jpg') no-repeat;
-	background-size: 100%;
+	background: dimgrey url('images/tours/calistoga-sip-n-cylce.jpg') 50% 0 no-repeat;
+	background-size: cover;
 }
 
 
@@ -598,7 +630,7 @@ footer img {
 	color: rgb(38, 155, 198);
 }
 
-.tour {
+/*.tour {
 	height: 500px;
 	background: url('images/tours/bike2.jpg') center center no-repeat;
 	background-size: 100%;
@@ -609,37 +641,37 @@ footer img {
 .tour h1 {
 	padding-top: 200px;
 	font-size: 5vw;
+}*/
+
+
+
+
+.arrow-icon {
+	display:inline;
 }
 
-.arrow {
-	color: white;
-	opacity: .5;
-	border: 2px solid #FFF;
-	border-radius: 50%;
-	height: 40px;
-	width: 40px;
-	margin-top: 2%;
-}
+	.arrow-icon img {
+		width:50px;
+		position: absolute;
+		-webkit-transition: all 0.2s;
+		-moz-transition: all 0.2s;
+		-o-transition: all 0.2s;
+		transition: all 0.2s;
+	}
 
-.header-group>.arrow-icon {
-	opacity: 1;
-	
-}
+		.arrow-icon img:hover {
+			width: 53px;
+			margin-right:3px;
+		}
 
-.arrow-icon.left-arrow {
+.left-arrow {
 	float: left;
-	 margin:  1.5% 0 0 20px;
-	 background: url('images/white-arrow-icons.png') 0 -108px no-repeat;
-	 width: 54px;
-	 height: 54px;
-
+	 margin:  1.5% 0 0 20px;	 
 }
 
-
-.arrow-icon.right-arrow {
+.right-arrow {
 	float: right;
-  	margin:  1.5% 20px 0 0;
-  	background: url('images/white-arrow-icons.png') 0 0 no-repeat;
+  	margin:  1.5% 70px 0 0;
 }
 
 
@@ -724,8 +756,10 @@ footer img {
 
 #CDSRATINGWIDGET977 {
 	margin: 25px auto !important;
-	
+	width: 290px;
 }
+
+
 
 #CDSROWLOC977 {
 	display: none !important;
@@ -776,6 +810,10 @@ footer img {
 
 /*======================== Guides Page ============================*/	
 
+.guide {
+	background: url('images/guides-bg.jpg') 50% 0 no-repeat;
+}
+
 .main.guides {
 	background-color: #FFF;
 }
@@ -817,7 +855,7 @@ footer img {
 		margin-left: 10px;
 	}
 
-	.arrow-icon {
+	/*.arrow-icon {
 		content: "";
 		background: url('images/white-arrow-icons.png') 0 0 no-repeat;
 		width: 54px;
@@ -828,7 +866,7 @@ footer img {
   		-moz-transition: all 0.2s;
   		-o-transition: all 0.2s;
   		transition: all 0.2s;
-	}
+	}*/
 
 
 .guide-container > .guide-img, .small-tour-container > .small-tour-img {
@@ -853,18 +891,37 @@ footer img {
 	.small-tour-img img {
 		max-width: 100%;
 		height: inherit;
+		margin-bottom:-4px;
 	}
 
 
+/*======================== Gear Page ============================*/
 
+.gear {
+	background: url('images/gear-bg.jpg') 50% 0 no-repeat;
+}
+
+/*======================== End Gear Page ============================*/
+
+/*======================== Local Picks Page ============================*/
+
+.local-picks {
+	background: dimgrey url('images/local-picks-bg.jpg') 50% 0 no-repeat;
+}
+
+/*======================== End Local Picks Page ============================*/
 
 /*======================== Blog Page ============================*/
 
+.blog {
+	background: url('images/blog-bg.jpg') 50% 0 no-repeat;
+}
+
 .blog-listing-container {
-	width: 63%;
+	width: 94%;
 	padding: 1.5%;
 	margin: 0 1.5%;
-	float: left;
+	
 }
 
 .blog-listing-container a, blog-listing-container a:visited {
@@ -879,40 +936,68 @@ footer img {
 	color: rgb(38, 155, 198);
 }
 
-.blog-post h1 {
-	margin-bottom: 10px;
+.blog-post {
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #E6E6E6;
 }
 
-.blog-post span{
-	text-transform: uppercase;
-	font-size: 90%;
-	color: #707070;
+	.blog-post:last-child {
+	border-bottom: none;
+	}
+
+	.blog-post h1 {
+		margin-bottom: 10px;
+	}
+
+	.blog-post span{
+		text-transform: uppercase;
+		font-size: 90%;
+		color: #707070;
+	}
+
+	.blog-post img {
+		float: left;
+		margin: 0 20px 20px 0;
+	}
+
+	.blog-post p, .blog-info p {
+		line-height: 30px;
+	}
+
+		.blog-post img.avatar {
+			vertical-align: middle;
+			border-radius: 50%;
+			margin: 0 5px 0 0;
+			float: none;
+		}
+
+.blog-info img{
+	max-width: 263px;
+	height: auto;
 }
 
-.blog-post img {
-	float: left;
-	margin: 0 20px 20px 0;
+.blog-info a {
+	color: rgb(38, 155, 198);
 }
 
-.blog-post img.avatar {
-	vertical-align: middle;
-	border-radius: 50%;
-	margin-right: 5px;
-	float: none;
+	.blog-info a:hover {
+		color: rgb(35,142,182);
+
+	}
+
+.single.blog-post {
+	text-align: center;
 }
 
-.blog-info {
-	/*float: right;*/
-}
+	.single.blog-post img.avatar {
+		display: block;
+		margin: 0 auto 15px;
+	}
 
-.sidebar {
-	width: 25%;
-	padding: 1.5%;
-	margin: 0 1.5%;
-	height: 500px;
-	
-	float: left;
-}
+	.single.blog-post p {
+		text-align: left;
+	}
 
 /*======================== End Blog Page ============================*/
 
@@ -961,7 +1046,6 @@ footer img {
 		display: none;
 		position: absolute;
 		width: 100%;
-		height: 200px;
 		background-color: #3F3f3F;
 		left:-282px; 
 		margin:0px 0 0 -1px; 
@@ -1003,6 +1087,10 @@ footer img {
 		color: white;
 	}
 
+	.blog-info img{
+	max-width: 100%;
+}
+
 
 }
 
@@ -1013,18 +1101,38 @@ footer img {
 	.social li {
 		margin-right: 4vw;
 	}
+
+	.banner.page {
+		padding: 33% 0;
+	}
+		.banner.page h1 {
+			font-size: 23.5vw;
+			width: 85%;
+			margin:auto;
+		}
 	
+	.page-container {
+		width: 98%;
+		padding: 0%;
+	}
+
 	/*====================== End General ================================*/
 
 	/*======================== Home Page ============================*/	
 
-
-
-	.banner h2 {
-		font-size: 2.85vw;
-		width: 80%;
-		margin: auto;
+	.banner {
+		padding: 33% 0;
 	}
+
+		.banner h1 {
+			font-size: 17.5vw;
+		}
+
+		.banner h2 {
+			font-size: 5.5vw;
+			width: 80%;
+			margin: auto;
+		}
 
 	.main h2 {
 		font-size: 5.4vw;
@@ -1034,8 +1142,7 @@ footer img {
 	width: 100%;
 	margin-top: 5%;
 	background-color: rgb(38, 155, 198);
-	
-	margin: 1%;
+	margin: 1% 1% 25px 1%;
 	position: relative;
 	}
 
@@ -1084,7 +1191,9 @@ footer img {
 
 }
 
-	
+.arrow-icon.left-arrow, .arrow-icon.right-arrow {
+	/*display:none;*/
+}	
 
 
 

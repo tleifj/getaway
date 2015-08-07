@@ -6,8 +6,8 @@ get_header();
 <section class="banner tour-banner">
 	<div class="header-group">
 
-		<a class="arrow-icon left-arrow" href="<?php $prevpo=get_previous_post(); $prevpoid=$prevpo->ID; echo get_permalink($prevpoid); ?>"></a>
-		<a class="arrow-icon right-arrow" href="<?php $nepo=get_next_post(); $nepoid=$nepo->ID; echo get_permalink($nepoid); ?>"></a>	
+		<a class="arrow-icon left-arrow" href="<?php $prevpo=get_previous_post(); $prevpoid=$prevpo->ID; echo get_permalink($prevpoid); ?>"><img src="<?php echo get_template_directory_uri();?>/images/left-arrow-icon.png"></a>
+		<a class="arrow-icon right-arrow" href="<?php $nepo=get_next_post(); $nepoid=$nepo->ID; echo get_permalink($nepoid); ?>"><img src="<?php echo get_template_directory_uri();?>/images/right-arrow-icon.png"></a>	
 		<h1><?php the_field('name');  ?></h1>
 	</div>		
 </section>
@@ -42,16 +42,18 @@ get_header();
 				<a href="">
 					<div class="book-button">BOOK NOW</div>
 				</a>
-				<div id="TA_cdsratingsonlywide977" class="TA_cdsratingsonlywide">
+				<!-- <div id="TA_cdsratingsonlywide977" class="TA_cdsratingsonlywide">
 					<ul id="pwWrpWxL0O" class="TA_links HE0N0n0D2F87">
-					<li id="e8c3zJZ" class="BFDGBE5SdRoq">
-					<a target="_blank" href="http://www.tripadvisor.com/"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a>
-					</li>
+						<li id="e8c3zJZ" class="BFDGBE5SdRoq">
+							<a target="_blank" href="http://www.tripadvisor.com/">
+								<img src="http://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/>
+							</a>
+						</li>
 					</ul>
-					</div>
+				</div>
 					<script src="http://www.jscache.com/wejs?wtype=cdsratingsonlywide&amp;uniq=977&amp;locationId=656317&amp;lang=en_US&amp;border=false&amp;backgroundColor=white&amp;display_version=2"></script>
 
-
+ -->
 			</div>
 		</div>		
 	</section>

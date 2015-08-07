@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<section class="banner page">
+<section class="banner page guide">
 	<h1>Guides</h1>
 </section>
 <section class="main guides">

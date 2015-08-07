@@ -32,6 +32,7 @@ function getawayThemeSetup() {
 	// Add featured image support
 	add_theme_support('post-thumbnails', array('post', 'guide', 'tour'));
 	add_image_size('small-thumbnail', 320, 150, true);
+	add_image_size('med-thumbnail', 564, 322, true);
 	add_image_size('guide-thumbnail', 590, 590, true);
 }
 

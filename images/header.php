@@ -4,7 +4,6 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width" />
 <!-- 	<link type="text/css"rel="stylesheet" href="style.css">
  -->	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Euphoria+Script' rel='stylesheet' type='text/css'>
@@ -97,10 +96,10 @@
 <body>
 	
 		<header class="clear-header">
-			<a href="/"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" class="logo-image"></a>
+			<a href="<?php home_url();?>"><img src="<?php echo get_template_directory_uri() ?>/images/logo.png" class="logo-image"></a>
 			<nav class="main-nav">
 				<ul>
-					<a href="/"><li >HOME</li></a>
+					<a href="/front-page.php"><li >HOME</li></a>
 					<li id="tour-dropdown"><a href="index.php/tours/">TOURS</a>
 						<!-- Sub nav alternative -->
 						<div class="alt-sub-nav">
@@ -157,7 +156,7 @@
 		<div id="sidr" style="display: none;">
     			<nav class="nav">
 			        <ul>
-			            <li><a href="/">Home</a></li>
+			            <li><a href="index.php/">Home</a></li>
 			            <li id="tour-dropdown"><a href="index.php/tours/">Tours</a>
 				            <div class="alt-sub-nav">
 								<div class="alt-sub-nav-item">

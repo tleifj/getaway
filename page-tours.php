@@ -2,7 +2,7 @@
 get_header();
 
 ?>
-<section class="banner page">
+<section class="banner page tour">
 	<h1>Tours</h1>
 </section>
 <section class="main guides">
@@ -33,11 +33,11 @@ if($day_tour->have_posts()) {
 		<div class="small-tour-container">
 			
 				<div class="small-tour-img">
-				<a href="<?php the_permalink();?>">
+				<!-- <a href="<?php the_permalink();?>"> -->
 					<div class="overlay">
 						
-						<p>More Info</p>
-						<div class="arrow-icon"></div>
+						<!-- <p>More Info</p>
+						<div class="arrow-icon"></div> -->
 					</div>
 					<?php 
 						if(has_post_thumbnail()){
@@ -46,7 +46,7 @@ if($day_tour->have_posts()) {
 							echo '<img src="'. get_template_directory_uri() . '/images/thumbnail-placeholder.jpg" alt=""/>';
 						}
 						?>
-				</a>
+				<!-- </a> -->
 				</div>	
 				
 			<a href="<?php the_permalink();?>"><h2><?php the_field('name'); ?></h2></a>
